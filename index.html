@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Advanced Scenes with Audio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <div class="logo-container">
+        <img src="./logo.png" alt="Auto Space Logo" class="logo">
+    </div>
+    
+    <div class="ui-container">
+        <div class="content">
+            <h1>Three.js Showcase</h1>
+            <p id="sceneTitle">Geometry Showcase</p>
+            
+            <div class="scene-selector">
+                <button class="scene-btn" data-scene="0">Geometry</button>
+                <button class="scene-btn" data-scene="1">Particles</button>
+                <button class="scene-btn" data-scene="2">Wave</button>
+                <button class="scene-btn" data-scene="3">Spiral</button>
+                <button class="scene-btn" data-scene="4">Polyhedron</button>
+            </div>
+
+            <div class="controls">
+                <button id="rotateBtn" class="btn">Toggle Rotation</button>
+                <button id="audioBtn" class="btn btn-audio">🔊 Enable Audio</button>
+            </div>
+
+            <div class="info">
+                <p>🖱️ Move mouse to rotate camera</p>
+                <p>⌨️ Arrow keys to switch scenes | Space to toggle audio</p>
+                <p>🎵 Audio-reactive animations</p>
+            </div>
+
+            <div class="audio-visualizer">
+                <div id="frequencyBars"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
